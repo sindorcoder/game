@@ -1,0 +1,41 @@
+.navWrapper {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 26px 0;
+}
+.navImages {
+     display: flex;
+     align-items: center;
+     gap: 13px;
+}
+.navList {
+     display: flex;
+     align-items: center;
+     gap: 0 30px;
+     list-style: none;
+}
+.itemLink {
+     text-decoration: none;
+     font-family: Montserrat;
+     font-size: 14px;
+     font-weight: 500;
+     line-height: 17.07px;
+     text-align: left;
+     color: #424242;
+     text-transform: uppercase;
+     opacity: 70%;
+}
+.hireMe {
+     width: 90px;
+     display: flex;
+     align-items: center;
+     gap: 9px;
+     padding: 5px 14px;
+     background-color: #5A47AB;
+     font-size: 10px;
+     font-weight: 400;
+     color: #fff;
+     border-radius: 5px;
+     clip-path: polygon(10% 0%, 100% 0, 100% 100%, 10% 100%, 0% 50%)
+}

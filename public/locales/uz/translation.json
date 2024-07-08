@@ -1,0 +1,19 @@
+  {
+        "Blog": "blog",
+        "About": "Biz haqimizda",
+        "Contact": "Aloqa",
+        "portfolio": "PORTFOLIO",
+        "store": "Do'kon",
+        "freelance": "Erkin",
+        "cv": "Hujjat",
+        "title": "Blog xabarlari",
+        "all" : "Hammasi",
+        "design" : "UI Dizayn",
+        "designTwo" : "UX Dizayn",
+        "product" : "Mahsulot Dizayn",
+        "articles": "Maqola",
+        "tutorials": "Qo'llanma",
+        "news": " Yangiliklar",
+        "titleTwo" : "Men shunday deb o'ylayman, bu shunday. ",
+        "text": "Dizayn men qanday qilib tajribani eng muvaffaqiyatli taqdim etishni, men qo'ygan tugma muammoni hal qila oladimi yoki yo'qligini o'ylay boshlaganimdan keyin boshlanadi. Dizayndagi yagona nuqta ui dizayni emas, agar foydalanuvchi mahsulot oxirida yaxshi tajribaga ega bo'lmasa, dizayn mening fikrimcha muvaffaqiyatsiz deb hisoblanadi."
+  }

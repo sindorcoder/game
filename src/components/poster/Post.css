@@ -1,0 +1,70 @@
+.postList {
+     list-style: none;
+     display: flex;
+     align-items: center;
+     gap: 53px;
+}
+
+.postLink {
+     text-decoration: none;
+     padding-bottom: 8px;
+     transition: all .3s ease-in-out;
+     font-size: 18px;
+     font-weight: 700;
+     line-height: 21.94px;
+     text-align: left;
+     color: #424242;
+     border-bottom: 1px solid transparent;
+}
+.postLink:hover {
+     color: #D05270;
+     border-bottom: 1px solid #D05270;
+}
+.wrapperCards {
+     margin-top: 124px;
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 75px 20px;
+}
+.contentCard {
+     width: 100%;
+     max-width: 590px;
+}
+.cardImage {
+     width: 100%;
+}
+.cardContent {
+     margin-top: 16px;
+}
+.cardWatch {
+     font-size: 14px !important;
+     font-weight: 600 !important;
+     line-height: 17.07px !important;
+     text-align: left !important;
+     color: #424242 !important;
+}
+.cardTitle {
+     font-size: 24px !important;
+     font-weight: 600 !important;
+     line-height: 29.26px !important;
+     text-align: left !important;
+     color: #D05270 !important;
+     margin: 14px 0;
+}
+.cardText {
+     font-size: 16px !important;
+     font-weight: 400 !important;
+     line-height: 19.5px !important;
+     text-align: left !important;
+     color: #424242 !important;
+     margin-bottom: 30px;
+}
+.cardLink {
+     font-size: 18px;
+     font-weight: 500;
+     line-height: 21.94px;
+     text-align: left;
+     color: #D05270;
+     text-decoration: none;
+     border-bottom: 1px solid #D05270;
+}
