@@ -4,7 +4,7 @@ import { base } from "../../db/dataBase"
 import { NavLink } from "react-router-dom"
 import i18next from "i18next"
 const Post = () => {
-const data = useTranslation()
+const {t} = useTranslation()
 
 return (
     <section className="poster">
@@ -14,30 +14,30 @@ return (
 
 
                          <li className="postItem">
-                              <a href="#" className="postLink">{data.t("all")}</a>
+                              <a href="#" className="postLink">{t("all")}</a>
                          </li>
                          <li className="postItem">
-                              <a href="#" className="postLink">{data.t("design")}</a>
-                         </li>
-                         
-                         <li className="postItem">
-                              <a href="#" className="postLink">{data.t("designTwo")}</a>
+                              <a href="#" className="postLink">{t("design")}</a>
                          </li>
                          
                          <li className="postItem">
-                              <a href="#" className="postLink">{data.t("product")}</a>
+                              <a href="#" className="postLink">{t("designTwo")}</a>
                          </li>
                          
                          <li className="postItem">
-                              <a href="#" className="postLink">{data.t("articles")}</a>
+                              <a href="#" className="postLink">{t("product")}</a>
                          </li>
                          
                          <li className="postItem">
-                              <a href="#" className="postLink">{data.t("tutorials")}</a>
+                              <a href="#" className="postLink">{t("articles")}</a>
                          </li>
                          
                          <li className="postItem">
-                              <a href="#" className="postLink">{data.t("news")}</a>
+                              <a href="#" className="postLink">{t("tutorials")}</a>
+                         </li>
+                         
+                         <li className="postItem">
+                              <a href="#" className="postLink">{t("news")}</a>
                          </li>
                     </ul>
 
