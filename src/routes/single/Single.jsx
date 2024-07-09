@@ -1,10 +1,11 @@
 import { useParams } from "react-router-dom";
 import { base } from "../../db/dataBase";
 import Nav from "../../components/nav/Nav";
-import i18next from "i18next";
 import "./Single.css"
+import { useTranslation } from "react-i18next";
 
 const Single = () => {
+  const data = useTranslation()
   const id = useParams();
 
   const post = base.find((blog) => blog.id === parseInt(id.item));
@@ -21,9 +22,7 @@ const Single = () => {
         <div className="cardContent">
           <p className="cardWatch">{post.watch_en}</p>
           <h2 className="cardTitle">
-            {post[`title_${i18next.language}`]
-              ? post[`title_${i18next.language}`]
-              : post[`title_en`]}
+            {post[`title_${data.i18next.language}`]}
           </h2>
           <p className="cardText">{post.text}</p>
         </div>
