@@ -1,17 +1,37 @@
-import { useParams } from "react-router-dom"
-import { base } from "../../db/dataBase"
-const Single = () => {
-  const id = useParams()
-  const post = base.forEach(item => item.id === id.item ? item : null)
-  console.log(post)
+import { useParams } from "react-router-dom";
+import { base } from "../../db/dataBase";
+import Nav from "../../components/nav/Nav";
+import i18next from "i18next";
+import "./Single.css"
 
-  if(id.item === base.id) {
-    console.log("salom")
-  }
+const Single = () => {
+  const id = useParams();
+
+  const post = base.find((blog) => blog.id === parseInt(id.item));
 
   return (
-    <div>Single</div>
-  )
-}
+    <>
+      <Nav />
+      <div className="container">
+        <div className="cards">
+        <div className="contentCard" key={post.id}>
+        <div className="cardImage">
+          <img src={post.img} alt={post.title} />
+        </div>
+        <div className="cardContent">
+          <p className="cardWatch">{post.watch_en}</p>
+          <h2 className="cardTitle">
+            {post[`title_${i18next.language}`]
+              ? post[`title_${i18next.language}`]
+              : post[`title_en`]}
+          </h2>
+          <p className="cardText">{post.text}</p>
+        </div>
+      </div>
+        </div>
+      </div>
+    </>
+  );
+};
 
-export default Single
+export default Single;

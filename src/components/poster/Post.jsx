@@ -2,6 +2,7 @@ import "./Post.css"
 import { useTranslation } from "react-i18next"
 import { base } from "../../db/dataBase"
 import { NavLink } from "react-router-dom"
+import i18next from "i18next"
 const Post = () => {
 const {t} = useTranslation()
   return (
@@ -51,9 +52,15 @@ const {t} = useTranslation()
                                    </div>
                                    <div className="cardContent">
                                         <p className="cardWatch">{item.watch_en}</p>
-                                        <h2 className="cardTitle">{item.title_uz}</h2>
+                                        <h2 className="cardTitle">
+                                         {item[`title_${i18next.language}`]
+                                         ? item[`title_${i18next.language}`]
+                                         : item[`title_en`]}
+                                        </h2>
                                         <p className="cardText">{item.text}</p>
-                                        <NavLink className="cardLink" to={`/singlePage/${item.id}`}>{item.link_en}</NavLink>
+                                        <NavLink className="cardLink" to={`/singlePage/${item.id}`}>{item[`link_${i18next.language}`]
+                                         ? item[`link_${i18next.language}`]
+                                         : item[`link_en`]}</NavLink>
                                    </div>
                                    </div>
                               </>
