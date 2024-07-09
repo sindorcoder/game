@@ -5,7 +5,7 @@ import logo from "../../images/Vector.svg"
 import { useTranslation } from "react-i18next"
 import i18n from "../../locales";
 const Nav = () => {
-     const {t} = useTranslation()
+     const data = useTranslation()
      const sendInfo = (e) => {
           i18n.changeLanguage(e)
      }
@@ -23,27 +23,27 @@ const Nav = () => {
                </div>
                <ul className="navList">
                     <li className="listItem">
-                         <a href="#" className="itemLink">{t("portfolio")}</a>
+                         <a href="#" className="itemLink">{data.t("portfolio")}</a>
                     </li>
                     <li className="listItem">
-                         <a href="#" className="itemLink">{t("Blog")}</a>
+                         <a href="#" className="itemLink">{data.t("Blog")}</a>
                     </li>
                     <li className="listItem">
-                         <a href="#" className="itemLink">{t("cv")}</a>
+                         <a href="#" className="itemLink">{data.t("cv")}</a>
                     </li>
                     <li className="listItem">
-                         <a href="#" className="itemLink">{t("store")}</a>
+                         <a href="#" className="itemLink">{data.t("store")}</a>
                     </li>
                     <li className="listItem">
-                         <a href="#" className="itemLink">{t("freelance")}</a>
-                    </li>
-                    
-                    <li className="listItem">
-                         <a href="#" className="itemLink">{t("About")}</a>
+                         <a href="#" className="itemLink">{data.t("freelance")}</a>
                     </li>
                     
                     <li className="listItem">
-                         <a href="#" className="itemLink">{t("Contact")}</a>
+                         <a href="#" className="itemLink">{data.t("About")}</a>
+                    </li>
+                    
+                    <li className="listItem">
+                         <a href="#" className="itemLink">{data.t("Contact")}</a>
                     </li>
 
            

@@ -5,16 +5,16 @@ import twitter from "../../images/twitter.svg"
 import linkedin from "../../images/linkedin.svg"
 import medium from "../../images/medium.svg"
 const Hero = () => {
-const {t} = useTranslation()
+const data = useTranslation()
 
 return (
     <section className="hero">
       <div className="container">
         <div className="heroWrapper">
           <div className="wrapperContent">
-            <h1>{t("title")}</h1>
-            <h2>{t("titleTwo")}</h2>
-            <p>{t("text")}</p>
+            <h1>{data.t("title")}</h1>
+            <h2>{data.t("titleTwo")}</h2>
+            <p>{data.t("text")}</p>
 
             <div className="wrapperSocial">
               <a href="#">
