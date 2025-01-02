@@ -1,62 +1,62 @@
 .hero {
-     margin: 47px 0 150px 0;
+  margin: 47px 0 150px 0;
 }
 .heroWrapper {
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .wrapperContent {
-     width: 100%;
+  width: 100%;
 }
 .wrapperContent h1 {
-     font-size: 52px;
-     font-weight: 700;
-     line-height: 63.39px;
-     text-align: left;
-     color: #D05270;
-     margin-bottom: 22px;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 63.39px;
+  text-align: left;
+  color: #d05270;
+  margin-bottom: 22px;
 }
 .wrapperContent h2 {
-     font-size: 52px;
-     font-weight: 500;
-     line-height: 63.39px;
-     text-align: left;
-     color: #424242;
-     margin-bottom: 36px;
+  font-size: 52px;
+  font-weight: 500;
+  line-height: 63.39px;
+  text-align: left;
+  color: #424242;
+  margin-bottom: 36px;
 }
 .wrapperContent p {
-     font-size: 18px;
-     font-weight: 400;
-     line-height: 21.94px;
-     text-align: left;
-     color: #424242;
-     width: 100%;
-     max-width: 631px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.94px;
+  text-align: left;
+  color: #424242;
+  width: 100%;
+  max-width: 631px;
 }
 .wrapperSocial {
-     display: flex;
-     align-items: center;
-     gap: 18px;
-     margin-top: 36px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 36px;
 }
 .wrapperSocial a {
-     display: flex;
-     align-items: center;
-     gap: 30px;
-     padding: 22px 50px;
-     text-decoration: none;
-     background-color: #47ACDF;
-     font-size: 12px;
-     font-weight: 500;
-     line-height: 14.63px;
-     text-align: left;
-     color: #fff;
-     text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 22px 50px;
+  text-decoration: none;
+  background-color: #47acdf;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14.63px;
+  text-align: left;
+  color: #fff;
+  text-transform: uppercase;
 }
 .wrapperSocial a:last-child {
-     background-color: #000000;
+  background-color: #000000;
 }
 .wrapperSocial a:nth-child(2) {
-     background-color: #1275B1;
+  background-color: #1275b1;
 }
